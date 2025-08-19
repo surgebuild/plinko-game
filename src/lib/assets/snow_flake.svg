@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+  <rect x="1.07794" y="0.618951" width="19.0526" height="19.0525" rx="9.52626" fill="white" fill-opacity="0.45"/>
+  <rect x="1.07794" y="0.618951" width="19.0526" height="19.0525" rx="9.52626" stroke="white" stroke-width="0.762098"/>
+  <line x1="0.381049" y1="-0.381049" x2="18.5787" y2="-0.381049" transform="matrix(0.87598 0.482348 -0.517863 0.855464 2.23633 5.71118)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="18.5787" y2="-0.381049" transform="matrix(-0.87598 0.482348 0.517863 0.855464 18.8447 5.71118)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="10.4631" y1="1.38105" x2="10.4631" y2="18.9094" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.62061" y2="-0.381049" transform="matrix(-0.819868 0.572553 -0.608971 -0.793192 11.8018 1.60205)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.5587" y2="-0.381049" transform="matrix(-0.0993034 -0.995057 0.995905 -0.0904039 18.2295 15.885)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.55863" y2="-0.381049" transform="matrix(0.121312 0.992614 -0.993878 0.110486 3.12207 4.32568)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M13.9238 2.67151L10.3946 4.56269" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M15.8018 16.1625L16.2846 13.2163" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M5.12598 3.50708L5.12598 6.95446" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M12.1719 5.53662L10.2942 6.37235" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.5587" y2="-0.381049" transform="matrix(-0.0993034 -0.995057 0.995905 -0.0904039 15.1094 14.1456)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.55863" y2="-0.381049" transform="matrix(0.121312 0.992614 -0.993878 0.110486 6.28027 6.00171)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M19.1826 6.96948L17.6804 6.25314" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.62061" y2="-0.381049" transform="matrix(0.819868 -0.572553 0.608971 0.793192 8.91992 19.0518)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.64144" y2="-0.381049" transform="matrix(0.9408 0.338963 -0.368261 0.929722 1.94629 13.2207)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M19.5566 8.64099L15.9625 7.01117" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M6.91406 17.7145L10.1688 16.1624" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M1.7793 10.79L5.1592 12.9391" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M15.8018 8.87964L14.2996 8.04391" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.62061" y2="-0.381049" transform="matrix(0.819868 -0.572553 0.608971 0.793192 8.91992 15.449)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.64144" y2="-0.381049" transform="matrix(0.9408 0.338963 -0.368261 0.929722 5.1123 11.2535)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M10.1699 2.79065L8.94684 1.74856" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.64089" y2="-0.381049" transform="matrix(0.93785 -0.34704 0.376823 0.926285 17.8506 14.2493)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.63954" y2="-0.381049" transform="matrix(-0.930569 0.366117 -0.396988 -0.917824 3.53516 5.95337)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M10.1682 4.58169L6.66308 2.55207" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M16.312 13.181L19.1809 11.2674" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M5.10094 6.99021L1.90769 8.87965" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M10.169 6.37262L8.29125 5.5369" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.64089" y2="-0.381049" transform="matrix(0.93785 -0.34704 0.376823 0.926285 14.7305 12.5098)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.63954" y2="-0.381049" transform="matrix(-0.930569 0.366117 -0.396988 -0.917824 6.69434 7.62964)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M17.554 6.2533L17.6237 4.44785" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.61777" y2="-0.381049" transform="matrix(0.801675 0.597761 -0.633959 0.773366 10.1992 17.9049)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.55873" y2="-0.381049" transform="matrix(-0.0900094 0.995941 -0.996638 -0.0819303 3.65234 13.6174)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M15.9408 6.97068L16.0494 3.38756" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M10.4044 16.2183L13.5482 18.1922" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M5.28696 13.0585L5.78769 16.0432" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <path d="M14.3001 7.92464L14.1749 6.25318" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.61777" y2="-0.381049" transform="matrix(0.801675 0.597761 -0.633959 0.773366 10.1992 14.3021)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+  <line x1="0.381049" y1="-0.381049" x2="1.55873" y2="-0.381049" transform="matrix(-0.0900094 0.995941 -0.996638 -0.0819303 6.81641 11.6504)" stroke="white" stroke-width="0.762098" stroke-linecap="square"/>
+</svg>

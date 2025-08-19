@@ -10,6 +10,7 @@ import {
 } from '$lib/stores/game';
 import type { RiskLevel, RowCount } from '$lib/types';
 import { getRandomBetween } from '$lib/utils/numbers';
+import snowFlakeSvg from '$lib/assets/snow_flake.svg';
 import Matter, { type IBodyDefinition } from 'matter-js';
 import { get } from 'svelte/store';
 import { v4 as uuidv4 } from 'uuid';
@@ -130,7 +131,7 @@ class PlinkoEngine {
       options: {
         width: PlinkoEngine.WIDTH,
         height: PlinkoEngine.HEIGHT,
-        background: '#0f1728',
+        background: 'transparent',
         wireframes: false,
       },
     });
@@ -320,7 +321,12 @@ class PlinkoEngine {
         const pin = Matter.Bodies.circle(colX, rowY, this.pinRadius, {
           isStatic: true,
           render: {
-            fillStyle: '#ffffff',
+            fillStyle: 'transparent',
+            sprite: {
+              texture: snowFlakeSvg,
+              xScale: 0.5,
+              yScale: 0.5,
+            },
           },
           collisionFilter: {
             category: PIN_CATEGORY,

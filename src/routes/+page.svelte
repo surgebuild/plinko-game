@@ -15,8 +15,8 @@
 
 <svelte:window onbeforeunload={writeBalanceToLocalStorage} />
 
-<div class="relative flex min-h-dvh w-full flex-col">
-  <nav class="sticky top-0 z-10 w-full bg-gray-700 px-5 drop-shadow-lg">
+<div class="relative container mx-auto flex min-h-dvh w-full flex-col justify-between">
+  <nav class="sticky top-0 z-10 w-full px-5 drop-shadow-lg">
     <div class="mx-auto flex h-14 max-w-7xl items-center justify-between">
       <img src={logo} alt="logo" class="h-6 sm:h-7" />
       <div class="mx-auto">
@@ -24,13 +24,14 @@
       </div>
     </div>
   </nav>
-
-  <div class="flex-1 px-5">
-    <div class="mx-auto mt-5 max-w-xl min-w-[300px] drop-shadow-xl md:mt-10 lg:max-w-7xl">
-      <div class="flex flex-col-reverse overflow-hidden rounded-lg lg:w-full lg:flex-row">
-        <Sidebar />
-        <div class="flex-1">
-          <Plinko />
+  <div class="rounded-lg bg-black p-3">
+    <div class="game_gradient flex-1 rounded-lg border-10 border-[#16629B]">
+      <div class="mx-auto mt-5 max-w-xl min-w-[300px] drop-shadow-xl md:mt-10 lg:max-w-7xl">
+        <div class="flex flex-col-reverse overflow-hidden rounded-lg lg:w-full lg:flex-row">
+          <Sidebar />
+          <div class="flex-1">
+            <Plinko />
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +73,6 @@
   @reference "../app.css";
 
   :global(body) {
-    @apply bg-gray-800;
+    @apply bg-[#2867B2];
   }
 </style>

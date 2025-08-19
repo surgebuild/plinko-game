@@ -28,14 +28,14 @@ export function getBinColors(rowCount: RowCount) {
     const redToYellowLength = Math.ceil(binCount / 2);
 
     const redToYellowBg = interpolateRgbColors(
-      { r: 255, g: 0, b: 63 }, // rgb(255, 0, 63)
-      { r: 255, g: 192, b: 0 }, // rgb(255, 192, 0)
+      { r: 21, g: 224, b: 255 }, // rgb(21, 224, 255)
+      { r: 239, g: 255, b: 244 }, // rgb(239, 255, 244)
       redToYellowLength,
     ).map(({ r, g, b }) => `rgb(${r}, ${g}, ${b})`);
 
     const redToYellowShadow = interpolateRgbColors(
-      { r: 166, g: 0, b: 4 }, // rgb(166, 0, 4)
-      { r: 171, g: 121, b: 0 }, // rgb(171, 121, 0)
+      { r: 16, g: 128, b: 144 }, // rgb(16, 128, 144)
+      { r: 192, g: 255, b: 208 }, // rgb(192, 255, 208)
       redToYellowLength,
     ).map(({ r, g, b }) => `rgb(${r}, ${g}, ${b})`);
 

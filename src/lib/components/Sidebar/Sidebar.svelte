@@ -120,15 +120,15 @@
   const rowCounts = rowCountOptions.map((value) => ({ value, label: value.toString() }));
 </script>
 
-<div class="flex flex-col gap-5 bg-slate-700 p-3 lg:max-w-80">
-  <div class="flex gap-1 rounded-full bg-slate-900 p-1">
+<div class="flex h-full flex-col gap-5 bg-transparent p-3 lg:max-w-80">
+  <div class="flex gap-1 rounded-xl border-b-2 border-[#0000004D] bg-[#FFFFFF80] p-1">
     {#each betModes as { value, label }}
       <button
         disabled={autoBetInterval !== null}
         onclick={() => (betMode = value)}
         class={twMerge(
-          'flex-1 rounded-full py-2 text-sm font-medium text-white transition hover:not-disabled:bg-slate-600 active:not-disabled:bg-slate-500 disabled:cursor-not-allowed disabled:opacity-50',
-          betMode === value && 'bg-slate-600',
+          'flex-1 rounded-xl py-2 text-sm font-medium text-white transition hover:not-disabled:bg-[white/80] active:not-disabled:bg-slate-500 disabled:cursor-not-allowed disabled:opacity-50',
+          betMode === value && 'border-b-3 border-[#245C9B80] bg-white text-[#3382DD]',
         )}
       >
         {label}
@@ -137,9 +137,9 @@
   </div>
 
   <div class="relative">
-    <label for="betAmount" class="text-sm font-medium text-slate-300">Bet Amount</label>
-    <div class="flex">
-      <div class="relative flex-1">
+    <label for="betAmount" class="text-sm font-medium text-white">Bet Amount</label>
+    <div class="flex p-1">
+      <div class="relative flex rounded-xl bg-[#00000040] p-1">
         <input
           id="betAmount"
           value={$betAmount}
@@ -150,31 +150,38 @@
           step="0.01"
           inputmode="decimal"
           class={twMerge(
-            'w-full rounded-l-md border-2 border-slate-600 bg-slate-900 py-2 pr-2 pl-7 text-sm text-white transition-colors hover:cursor-pointer hover:not-disabled:border-slate-500 focus:border-slate-500 focus:outline-hidden  disabled:cursor-not-allowed disabled:opacity-50',
+            'w-full py-2 pr-2 pl-7 text-sm text-white transition-colors hover:cursor-pointer hover:not-disabled:border-slate-500 focus:border-slate-500 focus:outline-hidden  disabled:cursor-not-allowed disabled:opacity-50',
             (isBetAmountNegative || isBetExceedBalance) &&
               'border-red-500 hover:not-disabled:border-red-400 focus:border-red-400',
           )}
         />
-        <div class="absolute top-2 left-3 text-slate-500 select-none" aria-hidden="true">$</div>
+        <div
+          class="absolute top-1/2 left-3 -translate-y-1/2 text-white select-none"
+          aria-hidden="true"
+        >
+          $
+        </div>
+        <div class="flex gap-1">
+          <button
+            disabled={autoBetInterval !== null}
+            onclick={() => {
+              $betAmount = parseFloat(($betAmount / 2).toFixed(2));
+            }}
+            class="touch-manipulation rounded-xl bg-white px-4 font-bold text-black diagonal-fractions transition-colors hover:not-disabled:bg-slate-500 active:not-disabled:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            1/2
+          </button>
+          <button
+            disabled={autoBetInterval !== null}
+            onclick={() => {
+              $betAmount = parseFloat(($betAmount * 2).toFixed(2));
+            }}
+            class="relative touch-manipulation rounded-xl bg-white px-4 text-sm font-bold text-black transition-colors hover:not-disabled:bg-slate-500 active:not-disabled:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            2×
+          </button>
+        </div>
       </div>
-      <button
-        disabled={autoBetInterval !== null}
-        onclick={() => {
-          $betAmount = parseFloat(($betAmount / 2).toFixed(2));
-        }}
-        class="touch-manipulation bg-slate-600 px-4 font-bold text-white diagonal-fractions transition-colors hover:not-disabled:bg-slate-500 active:not-disabled:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        1/2
-      </button>
-      <button
-        disabled={autoBetInterval !== null}
-        onclick={() => {
-          $betAmount = parseFloat(($betAmount * 2).toFixed(2));
-        }}
-        class="relative touch-manipulation rounded-r-md bg-slate-600 px-4 text-sm font-bold text-white transition-colors after:absolute after:left-0 after:inline-block after:h-1/2 after:w-[2px] after:bg-slate-800 after:content-[''] hover:not-disabled:bg-slate-500 active:not-disabled:bg-slate-400 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        2×
-      </button>
     </div>
     {#if isBetAmountNegative}
       <p class="absolute text-xs leading-5 text-red-400">
@@ -186,7 +193,7 @@
   </div>
 
   <div>
-    <label for="riskLevel" class="text-sm font-medium text-slate-300">Risk</label>
+    <label for="riskLevel" class="text-sm font-medium text-white">Risk</label>
     <Select
       id="riskLevel"
       bind:value={$riskLevel}
@@ -196,7 +203,7 @@
   </div>
 
   <div>
-    <label for="rowCount" class="text-sm font-medium text-slate-300">Rows</label>
+    <label for="rowCount" class="text-sm font-medium text-white">Rows</label>
     <Select
       id="rowCount"
       bind:value={$rowCount}
@@ -244,23 +251,24 @@
       {/if}
     </div>
   {/if}
-
-  <button
-    onclick={handleBetClick}
-    disabled={isDropBallDisabled}
-    class={twMerge(
-      'touch-manipulation rounded-md bg-green-500 py-3 font-semibold text-slate-900 transition-colors hover:bg-green-400 active:bg-green-600 disabled:bg-neutral-600 disabled:text-neutral-400',
-      autoBetInterval !== null && 'bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600',
-    )}
-  >
-    {#if betMode === BetMode.MANUAL}
-      Drop Ball
-    {:else if autoBetInterval === null}
-      Start Autobet
-    {:else}
-      Stop Autobet
-    {/if}
-  </button>
+  <div class="rounded-xl bg-white p-1">
+    <button
+      onclick={handleBetClick}
+      disabled={isDropBallDisabled}
+      class={twMerge(
+        'w-full touch-manipulation rounded-xl border-b-4 border-[#D56D28] bg-[#FF944D] py-3 font-semibold text-white transition-colors hover:bg-[#FF944D]/80 active:bg-[#FF944D]/60 disabled:bg-neutral-600 disabled:text-neutral-400',
+        autoBetInterval !== null && 'bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600',
+      )}
+    >
+      {#if betMode === BetMode.MANUAL}
+        Drop Ball
+      {:else if autoBetInterval === null}
+        Start Autobet
+      {:else}
+        Stop Autobet
+      {/if}
+    </button>
+  </div>
 
   <div class="mt-auto pt-5">
     <div class="flex items-center gap-4 border-t border-slate-600 pt-3">
