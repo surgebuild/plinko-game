@@ -2,7 +2,7 @@
 	import { walletStore, walletActions } from '$lib/stores/wallet';
 
 	const handleConnect = () => {
-		walletActions.connectPetra();
+		walletActions.connect('Petra');
 	};
 
 	const handleDisconnect = () => {
