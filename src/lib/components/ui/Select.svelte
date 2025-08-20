@@ -20,5 +20,5 @@
       <option {value}>{label}</option>
     {/each}
   </select>
-  <CaretDown class="absolute top-3 right-3 text-slate-500" weight="bold" />
+  <CaretDown class="absolute top-3 right-3 text-white" weight="bold" />
 </div>

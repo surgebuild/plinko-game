@@ -34,7 +34,7 @@
     </div>
     <BinsRow />
   </div>
-  <div class="absolute top-1/2 right-[5%] -translate-y-1/2">
+  <div class="absolute top-2/3 right-[5%] -translate-y-1/2">
     <LastWins />
   </div>
 </div>

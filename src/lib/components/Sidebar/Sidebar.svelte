@@ -270,16 +270,16 @@
     </button>
   </div>
 
-  <div class="mt-auto pt-5">
-    <div class="flex items-center gap-4 border-t border-slate-600 pt-3">
+  <div class="mt-auto pt-3">
+    <div class="flex items-center gap-4">
       <Tooltip.Provider delayDuration={0} disableCloseOnTriggerClick>
         <!-- Settings Button -->
         <Tooltip.Root>
           <Tooltip.Trigger
             onclick={() => ($isGameSettingsOpen = !$isGameSettingsOpen)}
             class={twMerge(
-              'rounded-full p-2 text-slate-300 transition hover:bg-slate-600 active:bg-slate-500',
-              $isGameSettingsOpen && 'text-slate-100',
+              'rounded-full p-2 text-white transition hover:bg-slate-600 active:bg-slate-500',
+              $isGameSettingsOpen && 'text-white',
             )}
           >
             <GearSix class="size-6" weight="fill" />
@@ -307,8 +307,8 @@
           <Tooltip.Trigger
             onclick={() => ($isLiveStatsOpen = !$isLiveStatsOpen)}
             class={twMerge(
-              'rounded-full p-2 text-slate-300 transition hover:bg-slate-600 active:bg-slate-500',
-              $isLiveStatsOpen && 'text-slate-100',
+              'rounded-full p-2 text-white transition hover:bg-slate-600 active:bg-slate-500',
+              $isLiveStatsOpen && 'text-white',
             )}
           >
             <ChartLine class="size-6" weight="bold" />

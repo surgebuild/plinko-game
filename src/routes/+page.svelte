@@ -16,10 +16,10 @@
 <svelte:window onbeforeunload={writeBalanceToLocalStorage} />
 
 <div class="relative container mx-auto flex min-h-dvh w-full flex-col justify-between">
-  <nav class="sticky top-0 z-10 w-full px-5 drop-shadow-lg">
-    <div class="mx-auto flex h-14 max-w-7xl items-center justify-between">
+  <nav class="sticky top-0 z-10 w-full drop-shadow-lg">
+    <div class="flex h-14 w-full items-center justify-between">
       <img src={logo} alt="logo" class="h-6 sm:h-7" />
-      <div class="mx-auto">
+      <div class="w-fit">
         <Balance />
       </div>
     </div>
